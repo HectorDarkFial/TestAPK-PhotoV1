@@ -1,0 +1,7 @@
+{
+  "name": "APK-Photos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
