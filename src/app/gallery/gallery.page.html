@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      Home
+      Gallery
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,6 +12,11 @@
 <ion-content [fullscreen]="true">
   <br>
   <div id="container">
-    <ion-button routerLink="/delaits">ir a details</ion-button>
+    <ion-img [src]="photo" *ngFor="let photo of photos"></ion-img>
+    <ion-fab vertical="botton" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="takePhoto()">
+        <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
   </div>
 </ion-content>
